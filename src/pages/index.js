@@ -17,7 +17,7 @@ const IndexPage = () => (
     <h2 style = {{color: 'tomato', fontStyle: 'italic', marginBottom: '40px'}}>All you have to do is click on the icon on the bottom right corner!</h2>
     <fieldset style = {{borderLeft: 'solid tomato', borderRight: 'white', borderTop: 'white', borderBottom: 'white'}}><MyForm></MyForm></fieldset>
     <h3 style = {{marginTop:'30px'}}>About the Developer</h3>
-    <p style = {{marginRight: '200px'}}>My name is Bodhana Sivagurunathan, a 9th grader at Centennial Collegiate and Vocational Institute in Guelph. I firsthand know how boring life can get stuck at home. I bet we all do. I wanted to help my peers see that we can do something about our boredom, and as a result, I created SARAH. Treat her as an opportunity to learn what you can do at home to keep your passion for your sport alive, even during the current lockdown.  </p>
+    <p style = {{marginRight: '200px'}}>My name is Bodhana Sivagurunathan, a 9th grader at Centennial Collegiate and Vocational Institute in Guelph. Life got so boring for me, when I, like most of you, was forced to stay home, away from social life and most importantly, away from playing basketball. I wanted to help my peers see that we can do something about our boredom, and as a result, I created SARAH. Treat her as an opportunity to keep your passion for your sport alive, even during the current lockdown. </p>
     <h4 style = {{marginTop:'30px', fontStyle: 'italic'}}>Serving Teens in Canada and Beyond</h4>
   </Layout>
 )
