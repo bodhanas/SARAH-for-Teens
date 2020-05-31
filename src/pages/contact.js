@@ -2,11 +2,23 @@ import React, { useState }  from "react"
 import axios from "axios";
 import { Link } from "gatsby"
 import Layout from "../components/layout"
-import { Alert } from 'react-alert'
 
 
 const MyForm = () => {
-    
+  const Alert1 =() => {
+  ['primary',
+    'secondary',
+    'success',
+    'danger',
+    'warning',
+    'info',
+    'light',
+    'dark',
+  ].map((info, idx) => (
+    <Alert key={idx} variant={info}>
+      Feedback received! I hope SARAH was helpful.
+    </Alert>
+  ))};
     const [serverState, setServerState] = useState({
       submitting: false,
       status: null
@@ -30,7 +42,7 @@ const MyForm = () => {
         data: new FormData(form)
       })
         .then(r => {
-          handleServerResponse(true, alert('Feedback received. We hope SARAH was helpful!'), form);
+          handleServerResponse(true, Alert1, form);
         })
         .catch(r => {
           handleServerResponse(false, r.response.data.error, form);
