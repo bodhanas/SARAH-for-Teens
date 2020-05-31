@@ -2,6 +2,7 @@ import React, { useState }  from "react"
 import axios from "axios";
 import { Link } from "gatsby"
 import Layout from "../components/layout"
+import { Alert } from 'react-alert'
 
 
 const MyForm = () => {
@@ -29,7 +30,7 @@ const MyForm = () => {
         data: new FormData(form)
       })
         .then(r => {
-          handleServerResponse(true, '  Feedback received. We hope SARAH was helpful!', form);
+          handleServerResponse(true, alert('Feedback received. We hope SARAH was helpful!'), form);
         })
         .catch(r => {
           handleServerResponse(false, r.response.data.error, form);
@@ -49,7 +50,7 @@ const MyForm = () => {
                 <label style = {{marginLeft: '10px', marginRight: '10px'}} for="Suggestions">Any suggestions for new ideas?</label>
                 <input type="text" name="Suggestions" className="form-control" id="Suggestions" placeholder="Enter here" size = '30' style = {{borderColor: 'tomato',  borderWidth: '2px', borderRadius: '1px', marginLeft: '10px', marginTop: '10px'}}/>
             </div> 
-            <button type="submit" className="btn btn-primary"  disabled={serverState.submitting} style = {{backgroundColor: 'tomato', color: 'white', border: 'none', marginTop: '30px', marginLeft: '10px', marginBottom: '10px'}}>
+            <button type="submit" className="btn btn-primary"  disabled={serverState.submitting} style = {{backgroundColor: 'tomato', color: 'white', border: 'none', marginTop: '30px', marginLeft: '10px', marginBottom: '20px'}}>
                 Submit
             </button>
             {serverState.status && (
