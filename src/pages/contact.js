@@ -5,20 +5,7 @@ import Layout from "../components/layout"
 
 
 const MyForm = () => {
-  const Alert1 =() => {
-  ['primary',
-    'secondary',
-    'success',
-    'danger',
-    'warning',
-    'info',
-    'light',
-    'dark',
-  ].map((info, idx) => (
-    <Alert key={idx} variant={info}>
-      Feedback received! I hope SARAH was helpful.
-    </Alert>
-  ))};
+
     const [serverState, setServerState] = useState({
       submitting: false,
       status: null
@@ -42,7 +29,7 @@ const MyForm = () => {
         data: new FormData(form)
       })
         .then(r => {
-          handleServerResponse(true, Alert1, form);
+          handleServerResponse(true, <p style = {{marginLeft:'10px', marginTop:'20px'}}> Feedback recieved! I hope SARAH was helpful.</p>, form);
         })
         .catch(r => {
           handleServerResponse(false, r.response.data.error, form);
