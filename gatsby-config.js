@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `SARAH`,
-    description: `Keep yout passion for sports and recreation alive!`,
+    description: `Keep your passion for sports and recreation alive!`,
     author: `Bodhana Sivagurunathan`,
   },
   plugins: [
