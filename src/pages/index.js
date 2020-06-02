@@ -7,11 +7,12 @@ import MyForm from "../pages/contact"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Sports and Recreation at Home" />
     <h1>Sports and Recreation at Home</h1>
-    <p style = {{marginBottom:'20px'}}>Discover how to keep your passion for sports and recreation alive in the midst of COVID-19 with SARAH.</p>
-    <img style = {{marginBottom:'0px'}} src="https://lh3.googleusercontent.com/proxy/PpEevVwG3XVwzd4h0Zy5HvZWKx2zSZiWh39TNMia8FRe_zi_n7kCIMIUZ2gf2B85vr0r6er4riXeTuu4neHniJ7nqOoZxJ9R8MI_HlvWHHS3QDvoR9qM5NtA4w" alt="" width="300"
-         height="160"></img>
+    <h2 style = {{marginTop:'40px',marginBottom:'40px',color:'tomato', fontStyle: 'italic'}}>Discover how to keep your passion for sports and recreation alive!</h2>
+    <Image></Image>
+    <h1 style = {{marginTop:'40px'}}>Who is SARAH?</h1>
+    <p style = {{marginTop:'20px',marginBottom:'40px'}}>SARAH is a web assistant designed to give students creative solutions to continue practicing or just learning a little bit more about the different sports and recreational activities they once enjoyed, before social distancing regulations were put in place.</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
     </div>
     <h2 style = {{color: 'tomato', fontStyle: 'italic', marginBottom: '40px'}}>All you have to do is click on the icon on the bottom right corner!</h2>
