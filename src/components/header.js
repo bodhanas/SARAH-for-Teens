@@ -2,6 +2,13 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+function changeBackground(e) {
+  e.target.style.opacity = '0.7'
+}
+function changeBackground2(e){
+  e.target.style.opacity = '1'
+}
+
 const Header = ({ siteTitle }) => (
   <header
     style={{
@@ -27,6 +34,10 @@ const Header = ({ siteTitle }) => (
         >
           {siteTitle}
         </Link>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+        <a onMouseOver={changeBackground} onMouseLeave={changeBackground2}style = {{width: '67px',float:'right',borderRadius: '50%',padding: '20px', fontSize: '30px', textAlign: 'center', textDecoration: 'none', background: '#55ACEE',color: 'white'}} href="https://twitter.com/SARAHforteens"target="_blank" class="fa fa-twitter"></a>
+        <a onMouseOver={changeBackground} onMouseLeave={changeBackground2}style = {{width: '67px',marginRight:'10px',float: 'right',borderRadius: '50%',padding: '20px', fontSize: '30px', textAlign: 'center', textDecoration: 'none', background: '#3B5998',color: 'white'}}href="https://www.facebook.com/SARAH-Sports-and-Recreation-at-Home-101701461578700/"target="_blank" class="fa fa-facebook"></a>
+        <a onMouseOver={changeBackground} onMouseLeave={changeBackground2}style = {{width: '67px',marginRight:'10px',float: 'right',borderRadius: '50%',padding: '20px', fontSize: '30px', textAlign: 'center', textDecoration: 'none', background: '#E1306C',color: 'white'}}href="https://www.instagram.com/sarahforteens/"target="_blank" class="fa fa-instagram"></a>
       </h1>
     </div>
   </header>
