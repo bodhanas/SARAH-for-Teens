@@ -22,8 +22,9 @@ const IndexPage = () => (
     <a onMouseOver={changeBackground} onMouseLeave={changeBackground2}style = {{width: '37px', height: '37px', marginRight:'10px',float: 'left',borderRadius: '50%',paddingTop:'9px', fontSize: '20px', textAlign: 'center', textDecoration: 'none', background: '#E1306C',color: 'white'}}href="https://www.instagram.com/sarahforteens/"target="_blank" class="fa fa-instagram"></a>
     <br></br>
     <br></br>
+    <br></br>
     <h1><span style = {{textDecoration: "underline", textDecorationColor: 'tomato'}}>S</span>ports <span style = {{textDecoration: "underline", textDecorationColor: 'tomato'}}>A</span>nd <span style = {{textDecoration: "underline", textDecorationColor: 'tomato'}}>R</span>ecreation <span style = {{textDecoration: "underline", textDecorationColor: 'tomato'}}>A</span>t <span style = {{textDecoration: "underline", textDecorationColor: 'tomato'}}>H</span>ome</h1>
-    <h2 style = {{marginTop:'40px',marginBottom:'30px',color:'black', fontStyle: 'italic'}}>Discover how to keep your passion for sports and recreation alive!</h2>
+    <h3 style = {{marginTop:'40px',marginBottom:'30px',color:'black'}}>Discover how to keep your passion for sports and recreation alive!</h3>
     <h2 style = {{color: 'tomato', fontStyle: 'italic', marginBottom: '40px'}}>All you have to do is click on the icon on the bottom right corner!</h2>
     <Image></Image>
     <h1 style = {{marginTop:'40px'}}>Who is SARAH?</h1>
