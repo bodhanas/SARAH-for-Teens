@@ -3,6 +3,7 @@ module.exports = {
     title: `SARAH`,
     description: `Keep your passion for sports and recreation alive!`,
     author: `Bodhana Sivagurunathan`,
+    baseURL: 'https://sarahforteens.netlify.app/'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
