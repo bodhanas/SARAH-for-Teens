@@ -18,7 +18,6 @@ const IndexPage = () => (
     <SEO title="Sports and Recreation at Home" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
     <a onMouseOver={changeBackground} onMouseLeave={changeBackground2}style = {{width: '37px', height: '37px', float:'left', marginRight: '10px',borderRadius: '50%',padding: '10px', fontSize: '20px', textDecoration: 'none', background: '#55ACEE',color: 'white'}} href="https://twitter.com/SARAHforteens"target="_blank" class="fa fa-twitter"></a>
-    <a onMouseOver={changeBackground} onMouseLeave={changeBackground2}style = {{width: '37px',height: '37px',marginRight:'10px',float: 'left',borderRadius: '50%',padding: '10px', fontSize: '20px', textAlign: 'center', textDecoration: 'none', background: '#3B5998',color: 'white'}}href="https://www.facebook.com/SARAH-Sports-and-Recreation-at-Home-101701461578700/"target="_blank" class="fa fa-facebook"></a>
     <a onMouseOver={changeBackground} onMouseLeave={changeBackground2}style = {{width: '37px', height: '37px', marginRight:'10px',float: 'left',borderRadius: '50%',paddingTop:'9px', fontSize: '20px', textAlign: 'center', textDecoration: 'none', background: '#E1306C',color: 'white'}}href="https://www.instagram.com/sarahforteens/"target="_blank" class="fa fa-instagram"></a>
     <br></br>
     <br></br>
